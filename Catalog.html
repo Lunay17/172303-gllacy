@@ -59,13 +59,13 @@
             <a href="#">Сливочное</a>
           </li>
         </ul>
-        <h1>Сливочное мороженое</h1
+        <h1>Сливочное мороженое</h1>
       </div>
     </div>
 
 <!--основная часть сайта-->
     <main>
-      <div class="container">
+      <div class="container clearfix">
 <!--Фильтры страницы-->
         <div class="filters">
           <form action="">
@@ -104,7 +104,7 @@
           </form>
         </div>
 <!--Ассортимент мороженого-->
-        <div class="ice_all">
+        <div class="ice_all_catalog clearfix">
           <div class="ice_cream">
             <img src="img/ice_cream_1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом">
               <span class="price">310<i class="icon_rubl"></i>/кг</span>
@@ -120,7 +120,7 @@
               <span class="price">355<i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </div>
-          <div class="ice_cream">
+          <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_4.png" width="267" height="267" alt="Сливочное крем-брюле">
               <span class="price">415<i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -140,7 +140,7 @@
               <span class="price">375<i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
           </div>
-          <div class="ice_cream">
+          <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_2_4.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
               <span class="price">320<i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с шоколадной стружкой</a>
@@ -160,7 +160,7 @@
               <span class="price">355<i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с кучсочками черного шоколада</a>
           </div>
-          <div class="ice_cream">
+          <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_3_4.png" width="267" height="267" alt="Сливочное с мятой">
               <span class="price">420<i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с мятным сиропом</a>
@@ -179,29 +179,29 @@
       </div>
     </main>
 <!--подвал сайта-->
-    <footer>
-      <div class="container">
-        <section class="footer_social">
-          <a class="social_btn social_btn_twit" href="#">Твиттер</a>
-          <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
-          <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-          <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
-        </section>
-        <div class="foorter">
-          <i class="icon_footer"></i>
-          <ul>
-            <li><a href="#">Для поставщиков</a></li>
-           <li><a href="#">О производстве</a></li>
-           <li><a href="#">Наши документы</a></li>
-           <li><a href="#">Экологические стандарты</a></li>
-          </ul>
-        </div>
-        <section class="footer-copyright">
-          <img src="img/logo_htmlacademy.ru">
-          <a class="btn" href="https://htmlacademy.ru" width="108" height="37" alt="HTML_Academy">HTML Academy</a>
-          <p>Сделано в HTML Academy <i class="icon_academy"></i> 2016</p>
-        </section>
-      </div>
-    </footer>
-  </body>
+<footer>
+  <div class="container footer_index clearfix">
+    <section class="footer_social">
+      <a class="social_btn social_btn_twit" href="#">Твиттер</a>
+      <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+      <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
+      <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
+    </section>
+    <div class="foorter_links">
+      <i class="icon_footer"></i>
+      <ul>
+        <li><a href="#">Для поставщиков</a></li>
+       <li><a href="#">О производстве</a></li>
+       <li><a href="#">Наши документы</a></li>
+       <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </div>
+    <section class="footer_copyright">
+      <img src="img/Html_academy.svg" >
+      <a class="btn" href="https://htmlacademy.ru" width="108" height="37" alt="HTML_Academy">HTML Academy</a>
+      <p>Сделано в HTML Academy <i class="icon_academy"></i> 2016</p>
+    </section>
+  </div>
+</footer>
+</body>
 </html>
