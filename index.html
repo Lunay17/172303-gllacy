@@ -23,6 +23,13 @@
             <ul>
               <li>
                 <a href="#">Каталог</a>
+                  <ul class="dropdown">
+                    <li><a class="new" href="#">Новинки</a></li>
+                    <li><a href="#">Сливочные</a></li>
+                    <li><a href="#">Щербеты</a></li>
+                    <li><a href="#">Фруктовый лед</a></li>
+                    <li><a href="#">Мелорин</a></li>
+                  </ul>
               </li>
               <li>
                 <a href="#">Доставка и оплата</a>
@@ -35,11 +42,11 @@
           <div class="user_block clearfix">
             <div class="search">
               <i class="icon_search"></i>
-              <!--<div class="form_search">
+              <div class="form_search">
                 <form action="">
                   <input name="" value="" size="" type="text" placeholder="что ищем?">
                 </form>
-              </div>-->
+              </div>
             </div>
             <a class="login enter" href="#">Вход</a>
             <a class="login basket" href="#">Пусто</a>
@@ -157,9 +164,18 @@
                Для заказов по телефону:<br>
                <span class="tel">8 812 450-25-25</span><br>
                (с 10 до 20 ежедневно)
-               <a href="#">Форма обратной связи</a>
-         </div>
-       </div>
+               <form><button class="communication" href="#">Форма обратной связи</button></form>
+
+               <div class="modal_content">
+                    <p>Мы обязательно вам ответим!</p>
+                    <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
+                      <input class="name" type="text" name="name" placeholder="Как вас зовут?">
+                      <input class="mail" type="email"  name="email" placeholder="Ваша почта для ответа?">
+                      <input class="write" type="text"  name="text" placeholder="Напишите что-нибудь...">
+                      <button class="btn" type="submit">Отправить</button>
+                    </form>
+                  </div>
+               </div>
      </main>
 <!--подвал сайта-->
     <footer>
@@ -187,9 +203,6 @@
           </a>
         </section>
         <div class="foorter_links">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14.562" height="12.66" viewBox="0 0 14.562 12.66">
-            <path id="Сердце" class="cls-1" d="M434.606,2362.73s7.285-3.6,7.285-8.22c0-5.13-5.5-5.94-7.3-1.71m0.049,9.93s-7.285-3.6-7.285-8.22c0-5.13,5.5-5.94,7.3-1.71" transform="translate(-427.344 -2350.06)"/>
-          </svg>
           <ul>
             <li><a class="active" href="#">Для поставщиков</a></li>
            <li><a href="#">О производстве</a></li>
@@ -207,5 +220,15 @@
     </footer>
   </div>
 </div>
+
+
+<script>
+  var link = document.querySelector(".communication");
+  var popup = document.querySelector(".modal_content");
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+  popup.classList.add("modal_content_show");
+});
+</script>
   </body>
 </html>
