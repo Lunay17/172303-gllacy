@@ -7,9 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="content_wrapper clearfix">
 <!--Шапка сайта-->
 <header class="main_header">
-    <div class="container clearfix">
       <div class="index_logo">
         <img src="img/logo.svg" width="153" height="63" alt="Глейси">
       </div>
@@ -17,6 +17,13 @@
         <ul>
           <li>
             <a class="menu_active" href="#">Каталог</a>
+            <ul class="dropdown">
+              <li><a class="new" href="#">Новинки</a></li>
+              <li><a href="#">Сливочные</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -42,11 +49,9 @@
           <span>8 812 450-25-25</span>
         </div>
       </div>
-    </div>
 </header>
 <!--Навигация(Хлебные крошки)-->
-    <div class="breadcrumbs">
-      <div class="container clearfix">
+    <div class="breadcrumbs clearfix">
         <ul class="breadcrumbs_list">
           <li>
             <a href="#">Главная</a>
@@ -59,14 +64,13 @@
           </li>
         </ul>
         <h1>Сливочное мороженое</h1>
-      </div>
     </div>
 
 <!--основная часть сайта-->
     <main>
-      <div class="container clearfix">
 <!--Фильтры страницы-->
         <div class="filters">
+          <div class="level1 clearfix">
           <form action="">
             <div class="sorting_item">
               <label for="sorting">
@@ -74,26 +78,40 @@
               </label>
               <select class="sorting" id="sorting">
                 <option  class="s1" selected>по популярности</option>
-                <option class="s1">сначало недорогие</option>
-                <option class="s1">сначало дорогие</option>
+                <option class="s1">сначала недорогие</option>
+                <option class="s1">сначала дорогие</option>
                 <option class="s1">по жирности</option>
               </select>
             </div>
-            <div class="sorting_item">
-              <input type="range" min="100" max="500" step="1" value="50">
-            </div>
-            <div class="sorting_item">
+            <form action="form.php" method="GET">
+              <div class="sorting_price">
+              <p>Цена: 100 руб. - 500 руб.</p>
+              <div class="wrapper">
+                <div class="range_filter">
+                  <div class="range_controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle_min"></div>
+                    <div class="toggle toggle_max"></div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="sorting_fat">
               <p>Жирность:</p>
-              <div class="sorting_item wrapper">
+              <div class="wrapper">
                 <label><input class="s2" type="radio">0%</label>
                 <label><input class="s2" type="radio" checked>до 10%</label>
                 <label><input class="s2" type="radio">до 30%</label>
                 <label><input class="s2" type="radio">выше 30%</label>
               </div>
             </div>
-            <div class="sorting_item">
+            </div>
+            <div class="sorting_topping">
               <p>Наполнители:</p>
-              <div class="sorting_item wrapper">
+              <div class="wrapper">
                 <label><input class="s3" type="checkbox" checked>шоколадные</label>
                 <label><input class="s3" type="checkbox" checked>сахарные присыпки</label>
                 <label><input class="s3" type="checkbox">фрукты</label>
@@ -103,68 +121,80 @@
             </div>
             <imput class="show" type="submit" value="Применить">
           </form>
-        </div>
+          </div>
 <!--Ассортимент мороженого-->
         <div class="ice_all clearfix">
           <div class="ice_cream">
             <img src="img/ice_cream_1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом">
               <span class="price">310 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_2.png" width="267" height="267" alt="Сливочно-кофейное">
               <span class="price">380 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_3.png" width="267" height="267" alt="Сливочно-клубничное">
               <span class="price">355 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_4.png" width="267" height="267" alt="Сливочное крем-брюле">
               <span class="price">415 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_2_1.png" width="267" height="267" alt="Сливочное с брусникой">
               <span class="price">325 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с брусничным джемом</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_2_2.png" width="267" height="267" alt="Сливочно-черничное">
               <span class="price">410 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_2_3.png" width="267" height="267" alt="Сливочно-лимонное">
               <span class="price">375 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_2_4.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
               <span class="price">320 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с шоколадной стружкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_3_1.png" width="267" height="267" alt="Сливочно-ванильное">
               <span class="price">440 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_3_2.png" width="267" height="267" alt="Сливочное с ментолом">
               <span class="price">435 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с ментоловым сиропом</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_3_3.png" width="267" height="267" alt="Сливочное с черным шоколадом">
               <span class="price">355 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с кучсочками черного шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_3_4.png" width="267" height="267" alt="Сливочное с мятой">
               <span class="price">420 <i class="icon_rubl"></i>/кг</span>
             <a href="#">Сливочное с мятным сиропом</a>
+            <a class="button" href="#">Быстрый просмотр</a>
           </div>
         </div>
 <!--страницы товаров-->
@@ -175,7 +205,7 @@
             </svg>
 
           </a></li>
-          <li><a href="#">1</a></li>
+          <li><a href="#" class="active">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">4</a></li>
@@ -213,5 +243,6 @@
     </section>
   </div>
 </footer>
+</div>
 </body>
 </html>
