@@ -36,13 +36,24 @@
       <div class="user_block clearfix">
         <div class="search">
           <i class="icon_search"></i>
-          <!--<div class="form_search">
+          <div class="form_search">
             <form action="">
-              <input name="" value="" size="" type="text" placeholder="что ищем?">
+              <input name="search" size="310" type="text" placeholder="что ищем?">
             </form>
-          </div>-->
+          </div>
         </div>
+        <div class="enter_block">
         <a class="login enter" href="#">Вход</a>
+        <div class="enter_form clearfix">
+          <form class="login_form" action="" method="post">
+            <input class="icon_user" type="text" name="login" placeholder="Электронная почта">
+            <input class="icon_password" type="password"  name="password" placeholder="Пароль">
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="chek" href="#">Новая регистрация</a>
+            <button class="btn" type="submit">Войти</button>
+          </form>
+       </div>
+     </div>
         <a class="login basket" href="#">Пусто</a>
         <div class="header_contacts">
           С 10 до 20, ежедневно<br>
@@ -63,9 +74,8 @@
             <span class="last">Сливочное</span>
           </li>
         </ul>
-        <h1>Сливочное мороженое</h1>
     </div>
-
+        <h1>Сливочное мороженое</h1>
 <!--основная часть сайта-->
     <main>
 <!--Фильтры страницы-->
@@ -77,16 +87,17 @@
                 <p>Сортировка:</p>
               </label>
               <select class="sorting" id="sorting">
-                <option  class="s1" selected>по популярности</option>
-                <option class="s1">сначала недорогие</option>
-                <option class="s1">сначала дорогие</option>
-                <option class="s1">по жирности</option>
+                <option  class="type" selected>по популярности</option>
+                <option class="type">сначала недорогие</option>
+                <option class="type">сначала дорогие</option>
+                <option class="type">по жирности</option>
               </select>
+            </form>
             </div>
             <form action="form.php" method="GET">
               <div class="sorting_price">
               <p>Цена: 100 руб. - 500 руб.</p>
-              <div class="wrapper">
+              <div class="wrapper s1">
                 <div class="range_filter">
                   <div class="range_controls">
                     <div class="scale">
@@ -99,100 +110,103 @@
                 </div>
               </div>
             </form>
+            <form action="">
             <div class="sorting_fat">
               <p>Жирность:</p>
-              <div class="wrapper">
-                <label><input class="s2" type="radio">0%</label>
-                <label><input class="s2" type="radio" checked>до 10%</label>
-                <label><input class="s2" type="radio">до 30%</label>
-                <label><input class="s2" type="radio">выше 30%</label>
+              <div class="wrapper s2">
+                <label><input class="fat" type="radio">0%</label>
+                <label><input class="fat" type="radio" checked>до 10%</label>
+                <label><input class="fat" type="radio">до 30%</label>
+                <label><input class="fat" type="radio">выше 30%</label>
               </div>
             </div>
+          </form>
             </div>
+            <form action="">
             <div class="sorting_topping">
               <p>Наполнители:</p>
-              <div class="wrapper">
-                <label><input class="s3" type="checkbox" checked>шоколадные</label>
-                <label><input class="s3" type="checkbox" checked>сахарные присыпки</label>
-                <label><input class="s3" type="checkbox">фрукты</label>
-                <label><input class="s3" type="checkbox">сиропы</label>
-                <label><input class="s3" type="checkbox">джемы</label>
+              <div class="wrapper s3">
+                <label><input class="topping" type="checkbox" checked>шоколадные</label>
+                <label><input class="topping" type="checkbox" checked>сахарные присыпки</label>
+                <label><input class="topping" type="checkbox">фрукты</label>
+                <label><input class="topping" type="checkbox">сиропы</label>
+                <label><input class="topping" type="checkbox">джемы</label>
               </div>
             </div>
-            <imput class="show" type="submit" value="Применить">
           </form>
+          <button class="show">Применить</button>
           </div>
 <!--Ассортимент мороженого-->
         <div class="ice_all clearfix">
           <div class="ice_cream">
             <img src="img/ice_cream_1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом">
-              <span class="price">310 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">310 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_2.png" width="267" height="267" alt="Сливочно-кофейное">
-              <span class="price">380 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">380 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_3.png" width="267" height="267" alt="Сливочно-клубничное">
-              <span class="price">355 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">355 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_4.png" width="267" height="267" alt="Сливочное крем-брюле">
-              <span class="price">415 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">415 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_2_1.png" width="267" height="267" alt="Сливочное с брусникой">
-              <span class="price">325 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">325 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочное с брусничным джемом</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_2_2.png" width="267" height="267" alt="Сливочно-черничное">
-              <span class="price">410 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">410 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_2_3.png" width="267" height="267" alt="Сливочно-лимонное">
-              <span class="price">375 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">375 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_2_4.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-              <span class="price">320 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">320 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочное с шоколадной стружкой</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_3_1.png" width="267" height="267" alt="Сливочно-ванильное">
-              <span class="price">440 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">440 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_3_2.png" width="267" height="267" alt="Сливочное с ментолом">
-              <span class="price">435 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">435 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочное с ментоловым сиропом</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream">
             <img src="img/ice_cream_3_3.png" width="267" height="267" alt="Сливочное с черным шоколадом">
-              <span class="price">355 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">355 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочное с кучсочками черного шоколада</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
           <div class="ice_cream last_ice_cream">
             <img src="img/ice_cream_3_4.png" width="267" height="267" alt="Сливочное с мятой">
-              <span class="price">420 <i class="icon_rubl"></i>/кг</span>
+              <span class="price">420 <i class="icon_rubl"></i></span><span class="kg">/кг</span>
             <a href="#">Сливочное с мятным сиропом</a>
             <a class="button" href="#">Быстрый просмотр</a>
           </div>
@@ -203,7 +217,6 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="8.281" height="13.72" viewBox="0 0 8.281 13.72">
               <path id="_" data-name="&lt;" class="cls-1" d="M991.611,1493.69l-5.447,5.45,5.44,5.44-1.414,1.41-6.857-6.86,1.414-1.41h0l5.447-5.44Z" transform="translate(-983.344 -1492.28)"/>
             </svg>
-
           </a></li>
           <li><a href="#" class="active">1</a></li>
           <li><a href="#">2</a></li>

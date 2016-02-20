@@ -47,25 +47,29 @@
                 </form>
               </div>
             </div>
+            <div class="enter_block">
             <a class="login enter" href="#">Вход</a>
-            <!--<div class="enter_form">
+            <div class="enter_form clearfix">
               <form class="login_form" action="" method="post">
-                <input class="icon_user" type="text" name="login" placeholder="Логин">
+                <input class="icon_user" type="text" name="login" placeholder="Электронная почта">
                 <input class="icon_password" type="password"  name="password" placeholder="Пароль">
                 <a class="restore" href="#">Забыли пароль?</a>
                 <a class="chek" href="#">Новая регистрация</a>
                 <button class="btn" type="submit">Войти</button>
               </form>
-           </div>-->
+           </div>
+         </div>
             <a class="login basket" href="#">Пусто</a>
-          <!--  <form class="login_form" action="" method="post">
-              <input class="icon_user" type="text" name="login" placeholder="Логин">
-              <input class="icon_password" type="password"  name="password" placeholder="Пароль">
-              <a class="restore" href="#">Забыли пароль?</a>
-              <a class="chek" href="#">Новая регистрация</a>
-              <button class="btn" type="submit">Войти</button>
+            <div class="basket_form clearfix">
+           <!--<form class="login_form" action="" method="post">
+              <button class="close" type="button" title="Закрыть">Закрыть</button>
+              <input class="product_1" type="text" name="product" placeholder="">
+              <button class="close" type="button" title="Закрыть">Закрыть</button>
+              <input class="product_2" type="text"  name="product" placeholder="">
+              <input class="result" type="text"  name="result" placeholder="Итого:">
+              <button class="btn" type="submit">Оформить заказ</button>
             </form>-->
-
+          </div>
             <div class="header_contacts">
               С 10 до 20, ежедневно<br>
               <span>8 812 450-25-25</span>
@@ -93,7 +97,7 @@
     <label for="button_3"></label>
     </div>
 <!--основная часть сайта-->
-    <main>
+
 <!--блок акций-->
         <div class="index_content clearfix">
           <div class="index_content_top item_left">
@@ -179,7 +183,7 @@
              <p>Адрес главного офиса и<br>офлайн магазина:<br>
              <span class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</span><br>
                Для заказов по телефону:<br>
-               <span class="tel">8 812 450-25-25</span>
+               <span class="tel">8 812 450-25-25</span><br>
                (с 10 до 20 ежедневно)</p>
               <button class="communication" href="#">Форма обратной связи</button>
 
@@ -195,7 +199,7 @@
                   </div>
                </div>
         </div>
-     </main>
+
 <!--подвал сайта-->
     <footer>
       <div class="container footer_index clearfix">
@@ -231,6 +235,14 @@
     event.preventDefault();
   popup.classList.add("modal_content_show");
 });
+
+
+var close = document.querySelector(".close");
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+popup.classList.remove("modal_content_show");
+});
+
 </script>
   </body>
 </html>
