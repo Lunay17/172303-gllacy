@@ -58,18 +58,26 @@
           </div>
           <div class="basket_block">
             <a class="login basket" href="#">Пусто</a>
-            <div class="basket_form clearfix">
-              <div class="buy v1">
-                <button class="close" type="button" title="Закрыть">Закрыть</button>
-                <p class="product">Пломбир с апельсиновым джемом<span>1,5 кг х 200 руб.</span><span>300 руб.</span></p>
-             </div>
-             <div class="buy v2">
-               <button class="close" type="button" title="Закрыть">Закрыть</button>
-               <p class="product">Клубничный пломбир с присыпкой из белого шоколада<span>1,5 кг х 300 руб.</span><span>450 руб.</span></p>
-             </div>
-             <p class="result">Итого: 750 руб.</p>
-             <button class="clik btn" type="submit">Оформить заказ</button>
-             </div>
+            <div class="basket_form">
+              <table border="1">
+                <tr class="level1">
+                 <td class="close_ic"><button class="close" type="button" title="Закрыть">Закрыть</button></td>
+                 <td class="image_ic"></td>
+                 <td class="name_ice_cream">Пломбир с апельсиновым джемом</td>
+                 <td class="volume_ic">1,5 кг х 200 руб.</td>
+                 <td class="price_ic">300 руб.</td>
+               </tr>
+                <tr class="level2">
+                  <td class="close_ic"><button class="close" type="button" title="Закрыть">Закрыть</button></td>
+                  <td class="image_ic"></td>
+                  <td class="name_ice_cream">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="volume_ic">1,5 кг х 300 руб.</td>
+                  <td class="price_ic">450 руб.</td>
+                </tr>
+              </table>
+              <p class="result">Итого: 750 руб.</p>
+              <button class="clik btn" type="submit">Оформить заказ</button>
+            </div>
           </div>
           <div class="header_contacts">
             С 10 до 20, ежедневно<br>
@@ -125,29 +133,29 @@
             <div class="sorting_fat">
               <p>Жирность:</p>
               <div class="wrapper s2">
-                <input class="fat" type="radio" id="fat_1">
+                <input class="fat" type="radio" id="fat_1" name="fat">
                 <label for="fat_1">0%</label>
-                <input class="fat" type="radio" id="fat_2" checked>
+                <input class="fat" type="radio" id="fat_2" name="fat" checked>
                 <label for="fat_2">до 10%</label>
-                <input class="fat" type="radio" id="fat_3">
+                <input class="fat" type="radio" id="fat_3" name="fat">
                 <label for="fat_3">до 30%</label>
-                <input class="fat" type="radio" id="fat_4">
+                <input class="fat" type="radio" id="fat_4" name="fat">
                 <label for="fat_4">выше 30%</label>
               </div>
             </div>
             <div class="sorting_topping">
               <p>Наполнители:</p>
               <div class="wrapper s3">
-                <input class="topping" type="checkbox" checked>
-                <label>шоколадные</label>
-                <input class="topping" type="checkbox" checked>
-                <label>сахарные присыпки</label>
-                <input class="topping" type="checkbox">
-                <label>фрукты</label>
-                <input class="topping" type="checkbox">
-                <label>сиропы</label>
-                <input class="topping" type="checkbox">
-                <label>джемы</label>
+                <input class="topping" type="checkbox" id="topping_1" checked>
+                <label for="topping_1">шоколадные</label>
+                <input class="topping" type="checkbox" id="topping_2" checked>
+                <label for="topping_2">сахарные присыпки</label>
+                <input class="topping" type="checkbox" id="topping_3">
+                <label for="topping_3">фрукты</label>
+                <input class="topping" type="checkbox" id="topping_4">
+                <label for="topping_4">сиропы</label>
+                <input class="topping" type="checkbox" id="topping_5">
+                <label for="topping_5">джемы</label>
               </div>
             </div>
             <button class="show" type="submit">Применить</button>

@@ -172,6 +172,7 @@ p {
 
 .main_navigation ul li {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   border-radius: 20px;
 
@@ -203,11 +204,11 @@ p {
   display: block;
 }
 
-.main_navigation .dropdown a:hover .dropdown li:first-child {
+.dropdown li:first-child a:hover {
   border-radius: 10px 10px 0 0;
 }
 
-.main_navigation .dropdown li:last-child {
+.dropdown li:last-child a:hover {
   border-radius: 0 0 10px 10px;
 }
 
@@ -299,6 +300,7 @@ margin-top: 2px;
 
 .search:hover .form_search {
   display: inline-block;
+  vertical-align: top;
 }
 
 .form_search {
@@ -350,6 +352,7 @@ margin-top: 2px;
 .login {
   left: 0;
   display: inline-block;
+  vertical-align: middle;
 
   font-size: 14px;
   line-height: 18px;
@@ -367,6 +370,7 @@ margin-top: 2px;
 
 .enter_block {
   display: inline-block;
+  vertical-align: top;
 }
 
 .enter {
@@ -456,8 +460,10 @@ input.icon_password, input.icon_user {
   text-align: left;
 }
 
-._ket_block {
+.basket_block {
   display: inline-block;
+  vertical-align: top;
+  position: relative;
 }
 
 .basket {
@@ -486,18 +492,18 @@ input.icon_password, input.icon_user {
   font-size: 15px;
   padding: 5px 22px;
   margin-top: 15px;
-  margin-left: 317px;
+  float: right;
 }
 
 .basket_form {
   display: none;
   position: absolute;
   text-align: left;
-  left: 985px;
-  top: 62px;
+  right: 0px;
+  top: 37px;
   width: 539px;
   border-radius: 10px;
-  padding: 26px 17px 20px 41px;
+  padding: 6px 16px 20px 8px;
   z-index: 10;
   background: #f8f7f4;
   -webkit-box-sizing: border-box;
@@ -509,61 +515,75 @@ input.icon_password, input.icon_user {
   display: block;
 }
 
-.buy {
-  margin-bottom: 9px;
-  padding: 9px 0 17px;
-
-  -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-        box-sizing: border-box;
-}
-
-.basket_form p {
+.basket_form table {
   font-size: 13px;
   line-height: 17px;
   font-weight: 400;
   color: #333;
+  border: none;
+  margin-top: 7px;
+  margin-bottom: 29px;
 }
 
-.v1 {
-  background: url("../img/basket_ice_cream_1.png") 0 0 no-repeat;
-  padding-left: 45px;
+.basket_form tr {
+  height: 54px;
+  vertical-align: center;
 }
 
-.v2 {
-  background: url("../img/basket_ice_cream_2.png") 0 0 no-repeat;
-  padding-left: 45px;
-  padding-bottom: 15px;
-  border-bottom: #ccccc9 solid 1px;
+.basket_form td {
+  border: none;
 }
 
-.product span {
-  margin-left: 31px;
+.close_ic {
+  position: relative;
+  width: 25px;
 }
 
-.basket_form .close {
-  width: 13px;
-  height: 13px;
-  left: 10px;
+.close_ic button {
+  left: 0px;
 }
 
-.v1 .close {
-  top: 31px;
+.image_ic {
+ width: 40px;
+ height: 34px;
 }
 
-.v2 .close {
-  top: 84px;
+.level1 .image_ic {
+  background: url("../img/basket_ice_cream_1.png") 5px 10px no-repeat;
+}
+
+.level2 .image_ic {
+  background: url("../img/basket_ice_cream_2.png") 5px 10px no-repeat;
+}
+
+.name_ice_cream {
+  padding-left: 15px;
+  width: 230px;
+}
+
+.level2 .name_ice_cream {
+  padding-top: 13px;
+}
+
+.volume_ic {
+  width: 128px;
+  text-align: end;
+}
+
+.price_ic {
+  width: 75px;
+  text-align: end;
+  padding-right:16px;
 }
 
 p.result {
-  display: inline-block;
-  vertical-align: top;
   font-size: 15px;
   font-weight: 700;
   line-height: 19px;
-  float: right;
+  color: #333;
   margin-top: 5px;
- margin-right: 5px;
+  margin-right: 5px;
+  text-align: right;
 }
 
 .basket_form::before{
@@ -691,6 +711,7 @@ p.result {
 
 .ice_cream a {
   display: inline-block;
+  vertical-align: top;
   width: 258px;
   margin-left: 5px;
   margin-top: 5px;
@@ -947,11 +968,13 @@ p.result {
 
 .adress {
   display: inline-block;
+  vertical-align: top;
   padding-bottom: 18px;
 }
 
 .tel {
   display: inline-block;
+  vertical-align: top;
   padding-top: 5px;
   padding-bottom: 3px;
 }
@@ -971,10 +994,12 @@ p.result {
 }
 
 .modal_content {
-  position: absolute;
-  bottom: 1531px;
-  left: 360px;
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -221px;
+  margin-left: -237px;
   width: 454px;
   border-radius: 15px;
   padding-left: 24px;
@@ -1094,6 +1119,7 @@ input.write{
   margin: 0 3px;
   font-size: 0;
   display: inline-block;
+  vertical-align: top;
   border: 3px;
   border: #a9bbb1 solid;
   border-width: 3px;
@@ -1209,6 +1235,7 @@ input.write{
 
 .breadcrumbs li {
   display: inline-block;
+  vertical-align: top;
   padding-right: 20px;
 }
 
@@ -1391,6 +1418,7 @@ label {
 
 .sorting_fat label {
   display: inline-block;
+  vertical-align: top;
   padding-right: 46px;
   position: relative;
 }
@@ -1410,6 +1438,7 @@ label {
 
 .sorting_topping label {
   display: inline-block;
+  vertical-align: top;
   padding-right: 49px;
   position: relative;
 }
@@ -1461,6 +1490,7 @@ label {
 
 .page_product li {
   display: inline-block;
+  vertical-align: top;
 
   font-size: 16px;
   line-height: 20px;
