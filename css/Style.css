@@ -456,7 +456,7 @@ input.icon_password, input.icon_user {
   text-align: left;
 }
 
-.basket_block {
+._ket_block {
   display: inline-block;
 }
 
@@ -526,12 +526,12 @@ input.icon_password, input.icon_user {
 }
 
 .v1 {
-  background: url("../img/basket_icecream_1.png") 0 0 no-repeat;
+  background: url("../img/basket_ice_cream_1.png") 0 0 no-repeat;
   padding-left: 45px;
 }
 
 .v2 {
-  background: url("../img/basket_icecream_2.png") 0 0 no-repeat;
+  background: url("../img/basket_ice_cream_2.png") 0 0 no-repeat;
   padding-left: 45px;
   padding-bottom: 15px;
   border-bottom: #ccccc9 solid 1px;
@@ -1404,6 +1404,10 @@ label {
   left: -32px;
 }
 
+.sorting_fat label::before:hover {
+  border: #fff solid 2px;
+}
+
 .sorting_topping label {
   display: inline-block;
   padding-right: 49px;
@@ -1432,6 +1436,18 @@ label {
   background: #a6b7ad;
   border-radius: 50px;
   border: #fff solid 2px;
+}
+
+.show:hover {
+  background: #fafbfb;
+  border: #fafbfb solid 2px;
+  color: #363636;
+}
+
+.show:active {
+  background: #eaeaea;
+  border: #696969 solid 2px;
+  color: #363636;
 }
 
 .page_product {
@@ -1464,6 +1480,17 @@ label {
   margin-bottom: 38px;
   padding: 5px 10px;
   color: #fff;
+}
+
+.page_product a:hover {
+  border-radius: 50%;
+  background: #9db1a5;
+}
+
+.page_product a:active {
+  border-radius: 50%;
+  background: #fff;
+  color: #353535;
 }
 
 .prev {
