@@ -1,7 +1,7 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [59.938613982849, 30.322900507585],
-            zoom: 9
+            zoom: 15
         }, {
             searchControlProvider: 'yandex#search'
         }),
