@@ -5,7 +5,11 @@ body {
   font-weight: 400;
   font-family: 'Roboto', 'Arial', sans-serif;
   min-width: 1200px;
-  background: #849d8f;
+  background: #9cb0a5;
+  background: -moz-linear-gradient(top,  #9cb0a5 0%, #849d8f 100%);
+  background: -webkit-linear-gradient(top,  #9cb0a5 0%,#849d8f 100%);
+  background: linear-gradient(to bottom,  #9cb0a5 0%,#849d8f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cb0a5', endColorstr='#849d8f',GradientType=0 );
 }
 
 body > input[type="radio"] {
